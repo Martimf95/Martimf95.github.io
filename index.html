@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MartimDev</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: #f5f5f5;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  overflow: hidden;
+  animation-name: navbar;
+  animation-duration: 5s;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar-right {
+  float: right;
+}
+
+@keyframes navbar {
+  0% {height: 0px;}
+  100% {height: 60px;}
+}
+
+.container {
+  padding-top: 60px;
+  width: 90%;
+  margin: auto;
+}
+
+.content {
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+}
+
+.portfolio {
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+}
+
+.project {
+  padding: 10px;
+  margin: auto;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.project:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contact {
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+}
+
+.contact-form {
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+  background: #f5f5f5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.contact-form label {
+  display: block;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form input:focus {
+  border: 1px solid #555;
+  background-color: #fff;
+}
+
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form textarea:focus {
+  border: 1px solid #555;
+  background-color: #fff;
+}
+
+.contact-form input[type=submit] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.contact-form input[type=submit]:hover {
+  background-color: #45a049;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#contact">Contact</a>
+  <div class="navbar-right">
+    <a href="#login">Login</a>
+    <a href="#register">Register</a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <h1>Welcome to the Developers Website!</h1>
+    <p>We have been providing web development services for over 10 years. Our services include web design, web development, custom applications, and more. We can help you create a website that meets your needs and looks great.</p>
+  </div>
+  <div class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat aliquet urna, eget porttitor tellus blandit sed.</p>
+    </div>
+    <div class="project">
+      <h3>Project 2</h3>
+      <p>Vestibulum velit metus, porta quis est vel, porta ultricies eros. Ut varius mauris quis nisi varius condimentum.</p>
+    </div>
+    <div class="project">
+      <h3>Project 3</h3>
+      <p>Fusce condimentum elit et justo gravida, ut facilisis elit mollis. Praesent dictum purus id justo lacinia, a tempus eros consequat.</p>
+    </div>
+  </div>
+  <div class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <form action="/action_page.php">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Your email address..">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your message.." style="height:200px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
