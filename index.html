@@ -169,7 +169,17 @@ body {
   <div class="content">
     <h1>Willkommen auf MartimDev's Website!</h1>
     <p>Hi ich bin Martim</p>
-    <button type="button" onclick="window.location.href='https://Martim.github.io/download'">Download</button>
+    <button type="button" onclick=
+    <script type="text/javascript">
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'download/Testdatei.txt', true);
+  xhr.onload = function () {
+    if (xhr.status == 200) {
+      alert(xhr.responseText);
+    }
+  };
+  xhr.send();
+</script>Download</button>
   </div>
   <div class="portfolio">
     <h2>Portfolio</h2>
