@@ -145,6 +145,34 @@ body {
 </head>
 <body>
 
+<nav class="navbar">
+  <a href="#" class="navbar-brand">Navbar</a>
+  <div class="navbar-animated">
+    <div class="navbar-item">
+      <a href="#" class="navbar-link">Home</a>
+    </div>
+    <div class="navbar-item">
+      <a href="#" class="navbar-link">About</a>
+    </div>
+    <div class="navbar-item">
+      <a href="#" class="navbar-link">Contact</a>
+    </div>
+  </div>
+  <button class="navbar-toggle" type="button">
+    <span class="navbar-toggle-icon"></span>
+  </button>
+</nav>
+
+<script type="text/javascript">
+  const navbar = document.querySelector('.navbar');
+  const navbarToggle = document.querySelector('.navbar-toggle');
+
+  navbarToggle.addEventListener('click', () => {
+    navbar.classList.toggle('navbar-animated');
+  });
+</script>
+
+
 <div class="navbar">
   <a href="#home">Home</a>
   <a href="#services">Services</a>
